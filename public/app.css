@@ -1,0 +1,38 @@
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: rgba(167, 204, 242, 0.849);
+font-family: 'Asap', sans-serif;
+}
+
+.container {
+    background-color: rgba(252, 252, 252, 0.85);
+}
+
+h3 {
+    color: rgb(74,128,245)
+}
+#image-container {
+    max-width: 700px;
+    height: 50vh;
+    margin: 1vh auto;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 5px;
+}
+#img {
+    max-height: 48vh;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+width: auto;
+max-width: 100%;
+height: 48vh;
+margin: 0 auto;
+background-color: grey;
+}
+/* Optional: Makes the sample page fill the window. */

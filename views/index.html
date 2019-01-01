@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photolocate - Guess Location Of A Random Photo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Guess geographical location of a random Unsplash.com photo.">
+    <meta name="keywords" content="Unsplash API, Google Maps API, photo, map, location, guess">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div class="col-lg-3 pr-lg-0" id="sidebar">
+              <h3 class="py-4"><span class="mr-2"><i class="fas fa-map-marked-alt"></i></span>Photolocate</h3>
+              <p class="lead">Can you guess the location of this photo? Click on the map below to find out!</p>
+              <p>
+                <a class="imgLink" href="#" target="_blank">View this image on Unsplash</a>
+              </p>
+              <p>Author: <span id="author"></span></p>
+              <p>Location: <span id="location" class="d-none"></span></p>
+              <button id="btn" class="btn btn-outline-primary">Next Image</button>
+        </div>
+        <div id="content" class="col-lg-8">
+          <!-- IMAGE -->
+              <div id='image-container' class=" row d-flex justify-content-center align-items-center">
+                <a class="imgLink m-0 p-0" href="#" target="_blank">
+                  <img id="img" src="" alt="Random photo from Unsplash.com" class="mx-auto">
+                </a>
+              </div>
+        </div>
+      </div>
+          <!-- MAP -->
+          <div id="map"></div>
+    </div>
+    <!-- SCRIPT -->
+    <!--jQuery-->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+    </script>
+    <!--Custom JS-->
+    <script src='app.js'></script>
+    <!--Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_oxge_tQZ_hwvG_ZXb8ZoQO2IOzdNjf4&callback=initMap"
+    async defer>
+    </script>
+  </body>
+</html>
