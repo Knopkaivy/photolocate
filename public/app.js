@@ -38,8 +38,8 @@ function initMap() {
 // HELPER FUNCTIONS
 function placeMarkerAndPanTo(e, map) {
     place = e.latLng;
-    let markerA = new google.maps.Marker({position: place, map: map, icon: 'yellow_MarkerA.png'});
-    let markerB = new google.maps.Marker({position: imgPlace, map: map, icon: 'purple_MarkerB.png'});
+    let markerA = new google.maps.Marker({position: place, map: map, icon: '/imgs/yellow_MarkerA.png'});
+    let markerB = new google.maps.Marker({position: imgPlace, map: map, icon: '/imgs/purple_MarkerB.png'});
     markers.push(markerA);
     markers.push(markerB);
     flightPlanCoordinates = [place, imgPlace];
