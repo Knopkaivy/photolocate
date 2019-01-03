@@ -7,7 +7,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
     <!-- Custom CSS -->
@@ -18,22 +18,24 @@
     <meta name="keywords" content="Unsplash API, Google Maps API, photo, map, location, guess">
   </head>
   <body>
-    <div class="container">
+    <div class="container my-0 py-0">
       <div class="row">
         <!-- SIDEBAR -->
         <div class="col-lg-3 pr-lg-0" id="sidebar">
-              <h3 class="py-4"><span class="mr-2"><i class="fas fa-map-marked-alt"></i></span>Photolocate</h3>
+              <h1 class="py-4">
+                <span class=""><i class="fas fa-globe-americas"></i></span>
+              Photolocate</h1>
               <p class="lead">Can you guess the location of this photo? Click on the map below to find out!</p>
               <p>
-                <a class="imgLink" href="#" target="_blank">View this image on Unsplash</a>
+                <a class="imgLink" href="#" target="_blank"><strong>View this image on Unsplash</strong></a>
               </p>
-              <p>Author: <span id="author"></span></p>
-              <p>Location: <span id="location" class="d-none"></span></p>
+              <p class='mb-1'>Author: <span id="author"></span></p>
+              <p class='mb-4'>Location: <span id="location" class="d-none"></span></p>
               <button id="btn" class="btn btn-outline-primary">Next Image</button>
         </div>
         <div id="content" class="col-lg-8">
           <!-- IMAGE -->
-              <div id='image-container' class=" row d-flex justify-content-center align-items-center">
+              <div id='image-container' class=" row d-flex justify-content-center align-items-center px-1">
                 <a class="imgLink m-0 p-0" href="#" target="_blank">
                   <img id="img" src="" alt="Random photo from Unsplash.com" class="mx-auto">
                 </a>
@@ -41,7 +43,7 @@
         </div>
       </div>
           <!-- MAP -->
-          <div id="map"></div>
+          <div id="map" class='mb-1'></div>
     </div>
     <!-- SCRIPT -->
     <!--jQuery-->
