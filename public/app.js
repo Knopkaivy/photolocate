@@ -1,4 +1,5 @@
 /*global $*/
+/*global google*/
 var place = {lat: 20.540024, lng: 2.827833};
 var imgPlace = {};
 var countMapClicks = 0;
@@ -58,6 +59,20 @@ function placeMarkerAndPanTo(e, map) {
 
 
 // Unsplash API get request
+
+// ***This is an alternative get image handler that I'm currently working on but having some issues due to access permissions. Knopka
+// function getImage(){
+//     $.getJSON("https://api.unsplash.com/users/knopka/photos/?client_id=4bd9f32c51311d71e2d0349f4a2ee6131bbdff130110b17b702daad44e42f39e")
+//     .done(function(data){
+//         let randomIndex = Math.floor(Math.random() * data.length); // randomize photo calculation
+//         updateImage(data[randomIndex]);
+//     })
+//     .fail(function(jqxhr, textStatus, error){
+//         var err = `${textStatus}, ${error}`;
+//         console.log(`Request Failed: ${err}`);
+//     });
+// }
+
 function getImage(){
     $.getJSON("https://api.unsplash.com/photos/random/?client_id=4bd9f32c51311d71e2d0349f4a2ee6131bbdff130110b17b702daad44e42f39e")
     .done(function(data){
@@ -70,6 +85,20 @@ function getImage(){
 }
 
 // Update image with data received from Unsplash
+
+// ***This is an alternative get image handler that I'm currently working on but having some issues due to access permissions. Knopka
+// function updateImage(data){
+//     $('.imgLink').attr('href', data.links.html);
+//     $('#img').attr("src", data.urls.regular);
+//     $('#author').text(data.user.name);
+//     $('#location').text(data.location.name);
+//     console.log(`Location name is: ${data.location.name}`);
+//     console.log(`Location latitude is: ${data.location.position.latitude}`);
+//     console.log(`Location longitude is: ${data.location.position.longitude}`);
+//     imgPlace.lat = Number(data.location.position.latitude);
+//     imgPlace.lng = Number(data.location.position.longitude);
+// }
+
 function updateImage(data){
     $('.imgLink').attr('href', data.links.html);
     $('#img').attr("src", data.urls.regular);
