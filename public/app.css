@@ -15,6 +15,7 @@ h1 {
     color: rgb(74,128,245);
     font-size: 31px;
     font-weight: 500;
+    text-align: center;
 }
 
 .label {
@@ -23,6 +24,15 @@ h1 {
 
 .imgLink {
     font-weight: 600;
+}
+
+.button {
+    text-align: center;
+}
+
+#btn {
+    width: 80vw;
+    max-width: 220px;
 }
 
 #image-container {
@@ -67,16 +77,11 @@ background-color: grey;
     #sidebar p {
         font-size: 0.8rem;
     }
-    h1 {
-        text-align: center;
-    }
-    .button {
-        text-align: center;
-    }
+    
+    
     #btn {
         font-size: 0.8rem;
         margin: 0 auto;
-        width: 80vw;
-        max-width: 254px;
+        
     }
 }
