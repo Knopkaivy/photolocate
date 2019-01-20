@@ -7,7 +7,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,800" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
     <!-- Custom CSS -->
@@ -22,16 +22,18 @@
       <div class="row">
         <!-- SIDEBAR -->
         <div class="col-lg-3 pr-lg-0" id="sidebar">
-              <h1 class="py-4">
+              <h1 class="pt-2 pt-lg-5 pb-2">
                 <span class=""><i class="fas fa-globe-americas"></i></span>
               Photolocate</h1>
-              <p class="lead">Can you guess the location of this photo? Click on the map below to find out!</p>
-              <p>
-                <a class="imgLink" href="#" target="_blank"><strong>View this image on Unsplash</strong></a>
+              <p class='mb-1'>Can you guess the location of this photo? Click on the map below to find out!</p>
+              <p class='mb-1 label'>Author: <span id="author"></span></p>
+              <p class='mb-1 label'>Location: <span id="location" class="d-none"></span></p>
+              <p class='mb-2'>
+                <a class="imgLink" href="#" target="_blank">View this image on Unsplash</a>
               </p>
-              <p class='mb-1'>Author: <span id="author"></span></p>
-              <p class='mb-4'>Location: <span id="location" class="d-none"></span></p>
-              <button id="btn" class="btn btn-outline-primary">Next Image</button>
+              <div class='button'>
+                <button id="btn" class="btn btn-outline-primary">Next Image</button>
+              </div>
         </div>
         <div id="content" class="col-lg-8">
           <!-- IMAGE -->
